@@ -1,52 +1,50 @@
 const projects = [
   {
-    title: "MTTN Mobile App",
-    description: "The official mobile app for Manipal The Talk Network with articles, videos, artwork and event info.",
-    tech: ["Flutter", "Express.js", "AWS", "Cloudflare", "Google Play Console"],
-    image: "/assets/mttn-banner.jpg",
-    liveLink: "https://play.google.com/store/apps/details?id=com.mttn.android"
+    title: "GoalConnect – Football Platform",
+    description:
+      "A real-time football community app built with MERN stack. Supports distributed chat using Socket.io, role-based authentication, and live data scraping pipelines for matches, players, and stats.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "WebSockets", "JWT", "Cheerio", "Puppeteer"],
+    image: "/assets/goalconnect.png",
+    githubLink: "https://github.com/MadScientistt4/GoalConnect",
+    liveLink: "https://goal-connect-nu.vercel.app/",
+    date: "March 2024",
+  },
+  {
+    title: "StoryToComic – AI Comic Generator",
+    description:
+      "Transforms short stories into AI-generated comics using a generative pipeline. Integrated MongoDB GridFS for comic PDF storage and optimized API response time by 3×.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB GridFS", "AI APIs", "OpenRouter", "Pollinations.ai"],
+    image: "/assets/storytocomics.png",
+    githubLink: "https://github.com/MadScientistt4/StoryToComic",
+    date: "June 2024",
+  },
+  {
+    title: "Cloud-Based CI/CD Pipeline",
+    description:
+      "Automated a complete DevOps workflow with GitHub Actions, Docker, and AWS App Runner. Enabled zero-downtime deployment and built-in monitoring with notification pipelines.",
+    tech: ["GitHub Actions", "Docker", "AWS ECR", "AWS App Runner", "CI/CD"],
+    image: "/assets/ci-cd.png",
+    githubLink: "https://github.com/MadScientistt4/ci-cd-aws",
+    date: "May 2024",
+  },
+  {
+    title: "MTTN Web Platform",
+    description:
+      "Developed a secure, scalable web platform and admin dashboard for a creative media organization with thousands of daily visitors. Built Express.js backend with role-based authentication.",
+    tech: ["Express.js", "React", "MongoDB", "AWS", "Tailwind CSS"],
+    image: "/assets/mttn-web.png",
+    liveLink: "https://www.manipalthetalk.org/",
+    date: "September 2024",
   },
   {
     title: "Portfolio Website",
-    description: "My personal portfolio website built with Next.js and featuring dynamic theme customization.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Gemini API"],
+    description:
+      "My personal portfolio website built with Next.js and Tailwind CSS, featuring dynamic animations, theme customization, and optimized responsiveness across devices.",
+    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
     image: "/assets/portfolio.png",
-    githubLink: "https://github.com/04ac/portfolio",
-    liveLink: "https://Aditya.vercel.app"
-  },
-  {
-    title: "Video Summarizer YT",
-    description: "A Flutter app with which you can share and summarize YouTube (YT) videos using open source AI models on Huggingface",
-    tech: ["Flutter", "FastAPI", "Huggingface API", "Kotlin"],
-    image: "/assets/yt-summarizer.png",
-    githubLink: "https://github.com/04ac/video-summarizer-yt",
-    date: "January 2024",
-    contain: true,
-  },
-  {
-    title: "Aircraft Search",
-    description: "Uses OCR and custom regex to detect registration numbers and identify all aircraft in an uploaded image.",
-    tech: ["Python", "BeautifulSoup", "Regex", "Streamlit"],
-    image: "/assets/aircraft-search.png",
-    githubLink: "https://github.com/04ac/aircraft-search",
-    date: "April 2023"
-  },
-  {
-    title: "Konkan Rail Train Status",
-    description: "Flutter app which shows live data on running trains from the Konkan Railway API.",
-    tech: ["Flutter", "REST API", "Dart"],
-    image: "/assets/konkan-2.png",
-    githubLink: "https://github.com/04ac/konkan-rail-train-status",
-    date: "October 2023"
-  },
-  {
-    title: "Etch-a-Sketch",
-    description: "Interactive drawing web application created using HTML, CSS and JavaScript.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: "/assets/etch-a-sketch.png",
-    githubLink: "https://github.com/04ac/etch-a-sketch",
-    liveLink: "https://04ac.github.io/etch-a-sketch",
-    date: "June 2023"
+    githubLink: "https://github.com/MadScientistt4/Portfolio",
+    liveLink: "https://aditya.vercel.app/",
+    date: "November 2025",
   },
 ];
 
