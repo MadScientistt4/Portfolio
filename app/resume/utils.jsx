@@ -55,10 +55,10 @@ const subPages = [
         <ResumeGrid>
           <ResumeCard>
             <div className="flex justify-between items-center mb-2">
-              <h3 className="font-bold text-xl">Summer Analyst (SDE Intern)</h3>
+              <h3 className="font-bold text-xl">Capstone Project</h3>
               <span className="text-sm text-muted-foreground pl-2 text-right">May–Jul 2025</span>
             </div>
-            <h4 className="text-[var(--color-accent)] font-medium mb-3">Goldman Sachs</h4>
+            <h4 className="text-[var(--color-accent)] font-medium mb-3">Deloitte</h4>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>Automated quarterly reporting workflow with data transformations using AWS Glue Jobs (Spark), integrating Snowflake and on-prem databases.</li>
               <li>Eliminated 5 manual handoffs and improved delivery timelines by 2x.</li>
@@ -66,18 +66,7 @@ const subPages = [
           </ResumeCard>
           <ResumeCard>
             <div className="flex justify-between items-center mb-2">
-              <h3 className="font-bold text-xl">Software Intern</h3>
-              <span className="text-sm text-muted-foreground pl-2 text-right">June-Aug 2024</span>
-            </div>
-            <h4 className="text-[var(--color-accent)] font-medium mb-3">Tech Mahindra (Maker's Lab)</h4>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Developed Django backend for internship portal.</li>
-              <li>Implemented role-based page rendering, application tracking, and PDF upload support</li>
-            </ul>
-          </ResumeCard>
-          <ResumeCard>
-            <div className="flex justify-between items-center mb-2">
-              <h3 className="font-bold text-xl">Head of Development</h3>
+              <h3 className="font-bold text-xl">Web Developer</h3>
               <span className="text-sm text-muted-foreground pl-2 text-right">2024-25</span>
             </div>
             <h4 className="text-[var(--color-accent)] font-medium mb-3">Manipal The Talk Network</h4>
@@ -95,22 +84,7 @@ const subPages = [
             </ul>
           </ResumeCard>
         </ResumeGrid>
-        <h1 className="text-3xl font-extrabold mb-2 mt-4">
-          <span className='text-[var(--color-accent)]'>V</span>olunteering
-        </h1>
-        <ResumeGrid>
-          <ResumeCard>
-            <div className="flex justify-between items-center mb-2">
-              <h3 className="font-bold text-xl">Managing Committee</h3>
-              <span className="text-sm text-muted-foreground pl-2 text-right">March 2024</span>
-            </div>
-            <h4 className="text-[var(--color-accent)] font-medium mb-3">ISTE Manipal</h4>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Led Flutter workshop with 50+ attendees, covering UI development and OOP concepts</li>
-              <li>Conducted live code demos of three real-world apps to show the application of concepts</li>
-            </ul>
-          </ResumeCard>
-        </ResumeGrid>
+        
       </div>
   },
   {
