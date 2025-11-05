@@ -46,47 +46,58 @@ const SkillIcon = ({ icon, label }) => {
 
 const subPages = [
   {
-    name: "Experience",
-    component:
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-extrabold mb-2">
-          <span className='text-[var(--color-accent)]'>E</span>xperience
-        </h1>
-        <ResumeGrid>
-          <ResumeCard>
-            <div className="flex justify-between items-center mb-2">
-              <h3 className="font-bold text-xl">Capstone Project</h3>
-              <span className="text-sm text-muted-foreground pl-2 text-right">May–Jul 2025</span>
-            </div>
-            <h4 className="text-[var(--color-accent)] font-medium mb-3">Deloitte</h4>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Automated quarterly reporting workflow with data transformations using AWS Glue Jobs (Spark), integrating Snowflake and on-prem databases.</li>
-              <li>Eliminated 5 manual handoffs and improved delivery timelines by 2x.</li>
-            </ul>
-          </ResumeCard>
-          <ResumeCard>
-            <div className="flex justify-between items-center mb-2">
-              <h3 className="font-bold text-xl">Web Developer</h3>
-              <span className="text-sm text-muted-foreground pl-2 text-right">2024-25</span>
-            </div>
-            <h4 className="text-[var(--color-accent)] font-medium mb-3">Manipal The Talk Network</h4>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Gained practical experience with Flutter, Express.js, AWS EC2, GitHub Actions, Google Play console</li>
-              <li>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.mttn.android"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline text-[var(--color-accent)] hover:text-[var(--color-text)]">
-                  View on Play Store (10K+ downloads)
-                </a>
-              </li>
-            </ul>
-          </ResumeCard>
-        </ResumeGrid>
-        
-      </div>
+  name: "Experience",
+  component:
+    <div className="flex flex-col justify-center items-center">
+      <h1 className="text-3xl font-extrabold mb-2">
+        <span className='text-[var(--color-accent)]'>E</span>xperience
+      </h1>
+      <ResumeGrid>
+
+        {/* Deloitte Capstone */}
+        <ResumeCard>
+          <div className="flex justify-between items-center mb-2">
+            <h3 className="font-bold text-xl">Capstone Project – Predictive Maintenance</h3>
+            <span className="text-sm text-muted-foreground pl-2 text-right">Mar–Jul 2025</span>
+          </div>
+          <h4 className="text-[var(--color-accent)] font-medium mb-3">Deloitte</h4>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Developed a deep learning–based predictive maintenance system for cantilever beam–based industrial machines using accelerometer vibration data.</li>
+            <li>Implemented FFT-based frequency domain analysis to detect structural anomalies like cracks and loosened clamps.</li>
+            <li>Applied Bernoulli–Euler beam theory to correlate stiffness and natural frequency variations with fault conditions.</li>
+            <li>Trained a 1D CNN achieving ~88% fault classification accuracy using vibration data collected from simulations and experiments.</li>
+            <li>Validated model performance through MATLAB signal simulation and theoretical comparison.</li>
+          </ul>
+        </ResumeCard>
+
+        {/* MTTN Web Developer */}
+        <ResumeCard>
+          <div className="flex justify-between items-center mb-2">
+            <h3 className="font-bold text-xl">Web Developer</h3>
+            <span className="text-sm text-muted-foreground pl-2 text-right">Sep 2024 – Apr 2025</span>
+          </div>
+          <h4 className="text-[var(--color-accent)] font-medium mb-3">Manipal The Talk Network (MTTN)</h4>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Engineered a scalable web platform and admin panel for MTTN, a student-led media organization with thousands of daily readers.</li>
+            <li>Developed secure Express.js backend with cookie-based and role-based authentication, protecting 5+ admin routes.</li>
+            <li>Designed and implemented full admin functionalities for managing articles, videos, and featured content.</li>
+            <li>Collaborated with a 5-member cross-functional team, integrating frontend (Next.js) and backend seamlessly.</li>
+            <li>
+              <a
+                href="https://www.manipalthetalk.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-[var(--color-accent)] hover:text-[var(--color-text)]">
+                Visit Website
+              </a>
+            </li>
+          </ul>
+        </ResumeCard>
+
+      </ResumeGrid>
+    </div>
   },
+
   {
     name: "Education",
     component:
