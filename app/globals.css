@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* Add this defensive rule to handle empty var() */
+[class*="[var()]"],
+[class*="[var( )]"] {
+  /* Default fallback values */
+  color: inherit;
+  background-color: inherit;
+}
+
+/* :root {
+  --color-primary: #1A2942;
+  --color-accent: #5682A3;
+  --color-accent-hover: #406E8E;
+  --color-text: #D9E2EC;
+  --color-onAccent: #FFFFFF;
+} */
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.h1 {
+  @apply text-[42px] @xl:text-[60px] leading-[1.1] font-semibold;
+}
+
+.h2 {
+  @apply text-[32px] @xl:text-[40px] leading-[1.1] font-semibold;
+}
+
+.h3 {
+  @apply text-[18px] @xl:text-[24px] leading-[1.1] font-semibold;
+}
+
+
+/* @theme {
+  /* --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 968px;
+  --breakpoint-xl: 1280px;
+} */
