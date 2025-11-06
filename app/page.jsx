@@ -14,7 +14,7 @@ export default function Home() {
             <h1 className="h1 mb-6">
               Hello I'm <br />
               <span className="text-[var(--color-accent)]">
-                AdityaMathur
+                Aditya Mathur
               </span>
             </h1>
             <p className="max-w-[500px] text-[var(--color-text)]/80">
