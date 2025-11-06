@@ -4,19 +4,19 @@ const projects = [
     description:
       "A real-time football community app built with MERN stack. Supports distributed chat using Socket.io, role-based authentication, and live data scraping pipelines for matches, players, and stats.",
     tech: ["React", "Node.js", "Express.js", "MongoDB", "WebSockets", "JWT", "Cheerio", "Puppeteer"],
-    image: "/assets/goalconnect.png",
+    image: "/assets/goalconnect.png"  ,
     githubLink: "https://github.com/MadScientistt4/GoalConnect",
     liveLink: "https://goal-connect-nu.vercel.app/",
-    date: "March 2024",
+    date: "October 2024",
   },
   {
     title: "StoryToComic – AI Comic Generator",
     description:
       "Transforms short stories into AI-generated comics using a generative pipeline. Integrated MongoDB GridFS for comic PDF storage and optimized API response time by 3×.",
     tech: ["React", "Node.js", "Express.js", "MongoDB GridFS", "AI APIs", "OpenRouter", "Pollinations.ai"],
-    image: "/assets/storytocomics.png",
+    image: "/assets/storyToComic.png",
     githubLink: "https://github.com/MadScientistt4/StoryToComic",
-    date: "June 2024",
+    date: "April 2025",
   },
   {
     title: "Cloud-Based CI/CD Pipeline",
@@ -25,7 +25,7 @@ const projects = [
     tech: ["GitHub Actions", "Docker", "AWS ECR", "AWS App Runner", "CI/CD"],
     image: "/assets/ci-cd.png",
     githubLink: "https://github.com/MadScientistt4/ci-cd-aws",
-    date: "May 2024",
+    date: "September 2025",
   },
   {
     title: "MTTN Web Platform",
@@ -34,7 +34,7 @@ const projects = [
     tech: ["Express.js", "React", "MongoDB", "AWS", "Tailwind CSS"],
     image: "/assets/mttn-web.png",
     liveLink: "https://www.manipalthetalk.org/",
-    date: "September 2024",
+    date: "January 2025",
   },
   {
     title: "Portfolio Website",
