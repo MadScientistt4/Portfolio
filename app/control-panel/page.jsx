@@ -48,7 +48,13 @@ export default function ControlPanel() {
         <div className="text-center font-bold text-3xl text-[var(--color-accent)]">
           Control Panel
         </div>
-        <p className='text-center'>Customise my portfolio the way you like it! Try creating your own color scheme by typing out a vibe in the textbox.</p>
+        <p className='text-center text-[var(--color-text)] max-w-2xl'>
+          Describe a <span className="font-semibold text-[var(--color-accent)]">vibe</span> — like 
+          <em>"Scary Halloween"</em>, or <em>"cyberpunk night"</em> — and let the 
+          <span className="font-semibold text-[var(--color-accent)]"> AI Theme Generator </span>
+          instantly create a unique color palette for the entire portfolio.  
+          You can also explore the sample styles below for inspiration.
+        </p>
         <Divider />
         <div className="@container h-full w-full">
           <div className='flex flex-col @xl:flex-row gap-4'>
