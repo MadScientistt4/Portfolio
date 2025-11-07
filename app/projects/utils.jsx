@@ -19,6 +19,15 @@ const projects = [
     date: "April 2025",
   },
   {
+    title: "MTTN Web Platform",
+    description:
+      "Developed a secure, scalable web platform and admin dashboard for a creative media organization with thousands of daily visitors. Built Express.js backend with role-based authentication.",
+    tech: ["Express.js", "React", "MongoDB", "AWS", "Tailwind CSS"],
+    image: "/assets/mttn-Admin.png",
+    liveLink: "https://www.manipalthetalk.org/",
+    date: "January 2025",
+  },
+  {
     title: "Cloud-Based CI/CD Pipeline",
     description:
       "Automated a complete DevOps workflow with GitHub Actions, Docker, and AWS App Runner. Enabled zero-downtime deployment and built-in monitoring with notification pipelines.",
@@ -26,15 +35,6 @@ const projects = [
     image: "/assets/ci-cd.png",
     githubLink: "https://github.com/MadScientistt4/ci-cd-aws",
     date: "September 2025",
-  },
-  {
-    title: "MTTN Web Platform",
-    description:
-      "Developed a secure, scalable web platform and admin dashboard for a creative media organization with thousands of daily visitors. Built Express.js backend with role-based authentication.",
-    tech: ["Express.js", "React", "MongoDB", "AWS", "Tailwind CSS"],
-    image: "/assets/mttn-web.png",
-    liveLink: "https://www.manipalthetalk.org/",
-    date: "January 2025",
   },
   {
     title: "Portfolio Website",
