@@ -62,12 +62,12 @@ const subPages = [
           </div>
           <h4 className="text-[var(--color-accent)] font-medium mb-3">Deloitte</h4>
           <ul className="list-disc pl-5 space-y-2 text-sm">
-            <li>Developed a deep learning–based predictive maintenance system for cantilever beam–based industrial machines using accelerometer vibration data.</li>
-            <li>Implemented FFT-based frequency domain analysis to detect structural anomalies like cracks and loosened clamps.</li>
-            <li>Applied Bernoulli–Euler beam theory to correlate stiffness and natural frequency variations with fault conditions.</li>
-            <li>Trained a 1D CNN achieving ~88% fault classification accuracy using vibration data collected from simulations and experiments.</li>
-            <li>Validated model performance through MATLAB signal simulation and theoretical comparison.</li>
+            
+            <li>Developed a deep learning–based predictive maintenance system for cantilever beam–based machines using accelerometer vibration data.</li>
+            <li>Performed FFT-based frequency analysis and applied Bernoulli–Euler theory to detect cracks and stiffness variations.</li>
+            <li>Trained a 1D CNN model achieving ~88% fault detection accuracy, validated through MATLAB simulations.</li>
           </ul>
+
         </ResumeCard>
 
         {/* MTTN Web Developer */}
@@ -79,8 +79,8 @@ const subPages = [
           <h4 className="text-[var(--color-accent)] font-medium mb-3">Manipal The Talk Network (MTTN)</h4>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Engineered a scalable web platform and admin panel for MTTN, a student-led media organization with thousands of daily readers.</li>
-            <li>Developed secure Express.js backend with cookie-based and role-based authentication, protecting 5+ admin routes.</li>
-            <li>Designed and implemented full admin functionalities for managing articles, videos, and featured content.</li>
+            <li>Developed secure Express.js backend with cookie-based and role-based authentication.</li>
+            <li>Designed and implemented full admin functionalities for managing articles, videos, and art&Graphics.</li>
             <li>Collaborated with a 5-member cross-functional team, integrating frontend (Next.js) and backend seamlessly.</li>
             <li>
               <a
@@ -135,36 +135,12 @@ const subPages = [
           </h1>
         <ResumeGrid>
           <ResumeCard>
-            <h3 className="font-bold text-xl mb-4">Introduction to Databases for Back-End Development</h3>
-            <h4 className="text-[var(--color-accent)] font-medium mb-2">Meta, Coursera</h4>
-            <p className="text-sm text-muted-foreground mb-4">July 2023</p>
+            <h3 className="font-bold text-xl mb-4">Python for Data Science, AI & Development</h3>
+            <h4 className="text-[var(--color-accent)] font-medium mb-2">IBM, Coursera</h4>
+            <p className="text-sm text-muted-foreground mb-4">May 2025</p>
             <a
               className="underline text-[var(--color-accent)] hover:text-[var(--color-text)]"
-              href="https://www.coursera.org/account/accomplishments/verify/F2K3279F7GY5"
-              target="_blank"
-              rel="noopener noreferrer">
-              View Certificate
-            </a>
-          </ResumeCard>
-          <ResumeCard>
-            <h3 className="font-bold text-xl mb-4">Introduction to TensorFlow for AI, ML, and Deep Learning</h3>
-            <h4 className="text-[var(--color-accent)] font-medium mb-2">DeepLearning.AI, Coursera</h4>
-            <p className="text-sm text-muted-foreground mb-4">June 2023</p>
-            <a
-              className="underline text-[var(--color-accent)] hover:text-[var(--color-text)]"
-              href="https://www.coursera.org/account/accomplishments/verify/HE7XW3ZUXW3Y"
-              target="_blank"
-              rel="noopener noreferrer">
-              View Certificate
-            </a>
-          </ResumeCard>
-          <ResumeCard>
-            <h3 className="font-bold text-xl mb-4">Introduction to Android Mobile Application Development</h3>
-            <h4 className="text-[var(--color-accent)] font-medium mb-2">Meta, Coursera</h4>
-            <p className="text-sm text-muted-foreground mb-4">July 2023</p>
-            <a
-              className="underline text-[var(--color-accent)] hover:text-[var(--color-text)]"
-              href="https://www.coursera.org/account/accomplishments/verify/4CV4NV7D4EZC"
+              href="https://www.coursera.org/account/accomplishments/verify/496JP74EIPLP"
               target="_blank"
               rel="noopener noreferrer">
               View Certificate
