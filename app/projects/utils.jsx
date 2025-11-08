@@ -5,7 +5,7 @@ const projects = [
       "A real-time football community app built with MERN stack. Supports distributed chat using Socket.io, role-based authentication, and live data scraping pipelines for matches, players, and stats.",
     tech: ["React", "Node.js", "Express.js", "MongoDB", "WebSockets", "JWT", "Cheerio", "Puppeteer"],
     image: "/assets/goalconnect.png"  ,
-    githubLink: "https://github.com/MadScientistt4/GoalConnect",
+    githubLink: "https://github.com/MadScientistt4/Goal-Connect",
     liveLink: "https://goal-connect-nu.vercel.app/",
     date: "October 2024",
   },
