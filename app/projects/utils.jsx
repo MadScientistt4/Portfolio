@@ -33,7 +33,7 @@ const projects = [
       "Automated a complete DevOps workflow with GitHub Actions, Docker, and AWS App Runner. Enabled zero-downtime deployment and built-in monitoring with notification pipelines.",
     tech: ["GitHub Actions", "Docker", "AWS ECR", "AWS App Runner", "CI/CD"],
     image: "/assets/ci-cd.png",
-    githubLink: "https://github.com/MadScientistt4/ci-cd-aws",
+    githubLink: "https://github.com/MadScientistt4/cloud-ci-cd-demo",
     date: "September 2025",
   },
   {

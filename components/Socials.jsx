@@ -17,7 +17,7 @@ const buttons = [
   },
   // {
   //   icon: <FaEnvelope />,
-  //   path: 'mailto:Aditya.c4@gmail.com'
+  //   path: 'mailto:aditya.mathur5885@gmail.com'
   // }
   // {
   //     icon: <FaInstagram />,
