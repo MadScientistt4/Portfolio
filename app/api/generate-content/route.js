@@ -17,7 +17,7 @@ export async function POST(req) {
   }
 
   // const url = `https://generativelanguage.googleapis.com/v1beta/models/gemma-3-27b-it:generateContent?key=${apiKey}`;
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
   try {
     const response = await fetch(url, {
@@ -46,7 +46,16 @@ export async function POST(req) {
     });
 
     const data = await response.json();
-    const rawText = data.candidates[0].content.parts[0].text;
+    const rawText =
+    data?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+    if (!rawText) {
+      console.error("No text returned from Gemini", data);
+      return NextResponse.json(
+        { error: "Gemini returned no content" },
+        { status: 500 }
+      );
+    }
 
     console.log("Raw response:", rawText);
 
