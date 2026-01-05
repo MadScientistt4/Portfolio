@@ -10,6 +10,26 @@ const projects = [
     date: "October 2024",
   },
   {
+    title: "RFP BidAssist – AI-Powered RFP Automation",
+    description:
+      "An enterprise-focused AI platform built during EY Techathon to help a wire and cables manufacturing client bid on government RFPs. Automates RFP scraping, extracts technical requirements from PDFs, and recommends the top 3 matching products per requirement using LLM-based agents, significantly reducing manual bid analysis time.",
+    tech: [
+      "FastAPI",
+      "LLMs",
+      "Python",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "PDF Parsing",
+      "Web Scraping",
+      "AWS"
+    ],
+    image: "/assets/rfp-bidassist.png",
+    githubLink: "https://github.com/MadScientistt4/RFP-BidAssist-AI",
+    date: "December 2025",
+  },
+
+  {
     title: "StoryToComic – AI Comic Generator",
     description:
       "Transforms short stories into AI-generated comics using a generative pipeline. Integrated MongoDB GridFS for comic PDF storage and optimized API response time by 3×.",
@@ -18,6 +38,25 @@ const projects = [
     githubLink: "https://github.com/MadScientistt4/StoryToComic",
     date: "April 2025",
   },
+  {
+    title: "AI-Powered Student Assistant",
+    description:
+      "A MERN-based AI assistant that helps students explain concepts, generate MCQs, summarize text, and improve writing quality. Uses structured prompt engineering with guardrails and integrates Google Gemini for controlled, reliable AI outputs.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "Google Gemini API",
+      "Prompt Engineering",
+      "REST APIs"
+    ],
+    image: "/assets/ai-student-assistant.png",
+    githubLink: "https://github.com/MadScientistt4/AI-Student-Assistant",
+    liveLink: "https://ai-student-assistant.vercel.app/",
+    date: "January 2026",
+  },
+    
   {
     title: "MTTN Web Platform",
     description:
