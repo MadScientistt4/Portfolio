@@ -5,10 +5,10 @@ import MobileNav from "./MobileNav";
 
 function Header() {
     return (
-        <header className="py-8 @xl:py-12">
+        <header className="py-8 @xl:py-12 transition-all duration-300">
             <div className="px-12 @container mx-auto center flex justify-between items-center">
                 {/* Logo */}
-                <Link href="/">
+                <Link href="/" className="transition-transform duration-300 hover:scale-105">
                     <h1 className="text-4xl font-semibold">
                         <span className="text-[var(--color-accent)] text-5xl">A</span>ditya
                     </h1>

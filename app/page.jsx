@@ -17,7 +17,7 @@ export default function Home() {
                 Aditya Mathur
               </span>
             </h1>
-            <p className="max-w-[500px] text-[var(--color-text)]/80">
+            <p className="max-w-[500px] text-[var(--color-text)]/80 leading-relaxed mb-8">
               The best solutions happen where creativity meets technical expertise — and that's what drives my work
             </p>
             {/* control panel btn */}
@@ -25,8 +25,7 @@ export default function Home() {
               <Button
                 className="bg-[var(--color-accent)] hover:bg-transparent active:bg-transparent 
               border-2 border-[var(--color-accent)] text-[var(--color-primary)] 
-              hover:text-[var(--color-accent)] active:text-[var(--color-accent)] transition-all duration-300 my-6
-              font-bold"
+              hover:text-[var(--color-accent)] active:text-[var(--color-accent)] transition-all duration-300 font-bold shadow-lg hover:shadow-xl"
               >
                 <span className="flex flex-row gap-2 justify-center items-center">
                   <span>Customize Website</span>
@@ -35,34 +34,33 @@ export default function Home() {
               </Button>
             </Link>
             {/* btn and socials */}
-            <div className="flex flex-col @xl:flex-row items-center gap-2">
+            <div className="flex flex-col @xl:flex-row items-center gap-4 mt-8">
             <Link 
               href="mailto:aditya.mathur5885@gmail.com"
-              // target="_blank"
               rel="noopener noreferrer"
             >
                 <Button
                   className="bg-transparent border-[var(--color-text)] 
-                  border-2 mb-6 @xl:mr-6 @xl:mb-0
+                  border-2 
                   hover:bg-[var(--color-text)] hover:text-[var(--color-primary)] 
                   active:bg-[var(--color-text)] active:text-[var(--color-primary)] 
-                  transition-all duration-300 text-center"
+                  transition-all duration-300 text-center shadow-md hover:shadow-lg"
                 >
                   <span className="flex items-center justify-center gap-2">
                     <span>Say Hi!</span>
-                    <FaEnvelope className="text-xl" />
+                    <FaEnvelope className="text-lg" />
                   </span>
                 </Button>
               </Link>
-              <div className="mb-8 @xl:mb-0">
+              <div>
                 <Socials
                   containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-[var(--color-accent)]
-                  border-[1.5] rounded-full flex justify-center items-center
+                  iconStyles="w-10 h-10 border-2 border-[var(--color-accent)]
+                  rounded-full flex justify-center items-center
                   text-[var(--color-accent)] 
                   hover:bg-[var(--color-accent)] hover:text-[var(--color-primary)]
                   active:bg-[var(--color-accent)] active:text-[var(--color-primary)]
-                  transition-all duration-300"
+                  transition-all duration-300 hover:shadow-md"
                 />
               </div>
             </div>

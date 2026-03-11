@@ -20,8 +20,8 @@ const Resume = () => {
                 className={`hover:bg-[var(--color-accent)] bg-transparent 
                   border-2 border-[var(--color-accent)] hover:text-[var(--color-primary)] 
                   text-[var(--color-accent)] transition-all duration-300
-                  font-bold
-                  ${selectedIndex === index && "bg-[var(--color-accent)] text-[var(--color-primary)] "}
+                  font-bold shadow-sm hover:shadow-md
+                  ${selectedIndex === index && "bg-[var(--color-accent)] text-[var(--color-primary)] shadow-md "}
                  `}
                 onClick={() => setselectedIndex(index)}
               >

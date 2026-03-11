@@ -53,8 +53,8 @@ function SheetOverlay({
     <SheetPrimitive.Overlay
       data-slot="sheet-overlay"
       className={cn(
-        "fixed inset-0 z-50 bg-black/75", // Increased opacity, removed blur
-        "transition-all duration-400 ease-in-out",
+        "fixed inset-0 z-50 bg-black/75",
+        "transition-all duration-300 ease-out",
         "data-[state=open]:animate-in data-[state=closed]:animate-out",
         "data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
         className
@@ -78,7 +78,7 @@ function SheetContent({
         className={cn(
           "fixed z-50 flex flex-col gap-4 shadow-lg",
           "bg-[var(--color-primary)] text-[var(--color-text)]",
-          "transform transition-all duration-300 ease-in-out",
+          "transform transition-all duration-300 ease-out",
 
           side === "right" && [
             "inset-y-0 right-0 h-full w-3/4 sm:max-w-sm",

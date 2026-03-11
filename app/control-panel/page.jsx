@@ -44,27 +44,28 @@ export default function ControlPanel() {
 
   return (
     <main className='h-full w-full mx-auto max-w-3xl'>
-      <div className="text-[var(--color-text)] bg-[var(--color-primary)] min-h-screen flex flex-col gap-4 p-4 items-center">
-        <div className="text-center font-bold text-3xl text-[var(--color-accent)]">
+      <div className="text-[var(--color-text)] bg-[var(--color-primary)] min-h-screen flex flex-col gap-6 p-6 items-center">
+        <div className="text-center font-bold text-4xl text-[var(--color-accent)]">
           Control Panel
         </div>
-        <p className='text-center text-[var(--color-text)] max-w-2xl'>
+        <p className='text-center text-[var(--color-text)]/90 max-w-2xl leading-relaxed text-lg'>
           Describe a <span className="font-semibold text-[var(--color-accent)]">vibe</span> — like 
-          <em>"Scary Halloween"</em>, or <em>"cyberpunk night"</em> — and let the 
+          <em className="font-medium"> "Scary Halloween"</em>, or <em className="font-medium">"cyberpunk night"</em> — and let the 
           <span className="font-semibold text-[var(--color-accent)]"> AI Theme Generator </span>
           instantly create a unique color palette for the entire portfolio.  
           You can also explore the sample styles below for inspiration.
         </p>
         <Divider />
         <div className="@container h-full w-full">
-          <div className='flex flex-col @xl:flex-row gap-4'>
-            <div className="bg-[var(--color-accent)] text-2xl flex items-center justify-center 
-            p-4 text-[var(--color-onAccent)] @xl:order-2 w-full rounded-xl @xl:rounded-2xl">
+          <div className='flex flex-col @xl:flex-row gap-6'>
+            <div className="bg-[var(--color-accent)] text-2xl font-bold flex items-center justify-center 
+            p-8 text-[var(--color-onAccent)] @xl:order-2 w-full rounded-2xl @xl:rounded-3xl shadow-lg
+            transition-all duration-300 hover:shadow-xl">
               Accent Color
             </div>
-            <div className='mt-4 @xl:mt-0 flex flex-col gap-4 @xl:order-1 w-full text-center'>
-              <p className="">
-                Current Vibe: <span className="font-bold capitalize">{currentThemeText}</span>
+            <div className='mt-2 @xl:mt-0 flex flex-col gap-4 @xl:order-1 w-full text-center'>
+              <p className="text-lg">
+                Current Vibe: <span className="font-bold capitalize text-[var(--color-accent)]">{currentThemeText}</span>
               </p>
               <Input
                 type="text"
@@ -73,13 +74,14 @@ export default function ControlPanel() {
                 onChange={(e) => {
                   setVibe(e.target.value)
                 }}
+                className="text-base"
               />
               <Button
                 onClick={handleThemeGeneration}
                 disabled={loading || isRateLimited || !vibe.trim()}
                 className="bg-[var(--color-accent)] hover:bg-[var(--color-primary)] hover:text-[var(--color-accent)]
-                px-4 py-2 rounded transition-colors duration-200 text-[var(--color-onAccent)]
-                shadow-md border-2 border-[var(--color-accent)] disabled:opacity-70 disabled:cursor-not-allowed"
+                px-6 py-3 rounded-lg transition-all duration-300 text-[var(--color-onAccent)]
+                shadow-md border-2 border-[var(--color-accent)] disabled:opacity-60 disabled:cursor-not-allowed hover:shadow-lg font-semibold"
               >
                 {loading ? (
                   <>
@@ -93,7 +95,7 @@ export default function ControlPanel() {
                 )}
               </Button>
               {!vibe.trim() ? (
-                <p className="text-sm text-[var(--color-accent)]">
+                <p className="text-sm text-[var(--color-accent)] animate-pulse">
                   Please enter a vibe.
                 </p>
               ) : null}
@@ -101,15 +103,16 @@ export default function ControlPanel() {
           </div>
         </div>
         <Divider />
-        <h4 className="mb-2">Sample Styles</h4>
+        <h4 className="text-xl font-semibold mb-4 text-[var(--color-accent)]">Sample Styles</h4>
         <div className="flex flex-wrap gap-4 items-center justify-center">
           {
             sampleThemes.map((item, index) => {
               return <Button
                 key={index}
                 className="bg-[var(--color-accent)] hover:bg-[var(--color-primary)] hover:text-[var(--color-accent)]
-                px-4 py-2 rounded transition-colors duration-200 text-[var(--color-onAccent)]
-                border-2 border-[var(--color-accent)] active:bg-[var(--color-primary)] active:text-[var(--color-accent)]"
+                px-5 py-2.5 rounded-lg transition-all duration-300 text-[var(--color-onAccent)]
+                border-2 border-[var(--color-accent)] active:bg-[var(--color-primary)] active:text-[var(--color-accent)]
+                shadow-md hover:shadow-lg font-medium"
                 onClick={() => {
                   setCurrentTheme(item.theme);
                   // setVibe(item.name);

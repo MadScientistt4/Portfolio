@@ -12,7 +12,15 @@ const DesktopNav = () => {
                 return <Link
                     href={e.path}
                     key={idx}
-                    className={`${e.path === pathName && "text-[var(--color-accent)] border-b-2 border-[var(--color-accent)]"} capitalize font-medium hover:text-[var(--color-accent)] transition-all`}
+                    className={`capitalize font-medium transition-all duration-300 ease-out pb-1 relative
+                        ${e.path === pathName 
+                            ? "text-[var(--color-accent)]" 
+                            : "text-[var(--color-text)] hover:text-[var(--color-accent)]"
+                        }
+                        after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[var(--color-accent)]
+                        after:transition-all after:duration-300 
+                        ${e.path === pathName ? "after:w-full" : "after:w-0 hover:after:w-full"}
+                    `}
                 >
                     {e.name}
                 </Link>
